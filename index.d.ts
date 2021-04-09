@@ -12,6 +12,9 @@
 /// <reference lib="es7" />
 
 
+type ReadableStream<T = any> = unknown;
+type WritableStream<T = any> = unknown;
+
 /// https://docs.nova.app/api-reference/assistants-registry/
 
 type AssistantsRegistrySelector = string | { syntax: string };
