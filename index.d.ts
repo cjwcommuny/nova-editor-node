@@ -12,8 +12,8 @@
 /// <reference lib="es7" />
 
 
-type ReadableStream<T = any> = unknown;
-type WritableStream<T = any> = unknown;
+type ReadableStream<T = any> = any;
+type WritableStream<T = any> = any;
 
 /// https://docs.nova.app/api-reference/assistants-registry/
 
