@@ -1,0 +1,24 @@
+{
+    "name": "@types/nova-editor-node",
+    "version": "4.1.0",
+    "description": "TypeScript definitions for nova-editor-node",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Cameron Little",
+            "url": "https://github.com/apexskier",
+            "githubUsername": "apexskier"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/nova-editor-node"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "52494488df68028cf890aa212dcfb1a6d7f2b087b412abba8e1cf97593087f0c",
+    "typeScriptVersion": "3.4"
+}
