@@ -18,7 +18,6 @@
         "directory": "types/nova-editor-node"
     },
     "scripts": {},
-    "dependencies": {},
     "typesPublisherContentHash": "52494488df68028cf890aa212dcfb1a6d7f2b087b412abba8e1cf97593087f0c",
     "typeScriptVersion": "3.4"
 }

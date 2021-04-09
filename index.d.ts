@@ -11,8 +11,6 @@
 /// <reference no-default-lib="true"/>
 /// <reference lib="es7" />
 
-type ReadableStream<T = any> = unknown;
-type WritableStream<T = any> = unknown;
 
 /// https://docs.nova.app/api-reference/assistants-registry/
 
@@ -482,7 +480,7 @@ declare class IssueParser {
 
 /// https://docs.nova.app/api-reference/language-client/
 
-declare class LanguageClient {
+declare class LanguageClient extends Disposable {
     constructor(
         identifier: string,
         name: string,
@@ -574,13 +572,13 @@ declare class Process {
     readonly command: string;
     readonly pid: number;
     readonly stdio?: [
-        ReadableStream | WritableStream | null,
-        ReadableStream | WritableStream | null,
-        ReadableStream | WritableStream | null,
+        WritableStream | null,
+        ReadableStream | null,
+        ReadableStream | null,
     ];
-    readonly stdin?: ReadableStream | WritableStream | null;
-    readonly stdout?: ReadableStream | WritableStream | null;
-    readonly stderr?: ReadableStream | WritableStream | null;
+    readonly stdin?: WritableStream | null;
+    readonly stdout?: ReadableStream | null;
+    readonly stderr?: ReadableStream | null;
 
     onStdout(callback: (line: string) => void): Disposable;
     onStderr(callback: (line: string) => void): Disposable;
