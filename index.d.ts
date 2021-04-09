@@ -30,7 +30,7 @@ interface AssistantsRegistry {
         object: IssueAssistant,
         options?: { event: 'onChange' | 'onSave' },
     ): Disposable;
-    registerTaskAssistant(object: TaskAssistant, options?: { identifer: string; name: string }): Disposable;
+    registerTaskAssistant(object: TaskAssistant, options?: { identifier: string; name: string }): Disposable;
 }
 
 type AssistantArray<T> = ReadonlyArray<T> | Promise<ReadonlyArray<T>>;
