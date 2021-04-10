@@ -619,7 +619,7 @@ declare class Range {
     empty: boolean;
 
     isEqual(other: Range): boolean;
-    compare(other: Range): number;
+    compare(other: Range): -1 | 0 | 1;
     containsRange(other: Range): boolean;
     containsIndex(index: number): boolean;
     union(other: Range): Range;
@@ -884,7 +884,7 @@ interface TextEditorEdit {
 
 interface TreeDataProvider<E> {
     getChildren(element: E | null): E[] | Promise<E[]>;
-    getParent?(element: E): E;
+    getParent?(element: E): E | null;
     getTreeItem(element: E): TreeItem;
 }
 
